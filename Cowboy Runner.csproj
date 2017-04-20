@@ -80,6 +80,11 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Background Scripts\BGLooper.cs" />
     <Compile Include="Assets\Scripts\Background Scripts\BGScaler.cs" />
+    <Compile Include="Assets\Scripts\Collector Scripts\Collector.cs" />
+    <Compile Include="Assets\Scripts\Collector Scripts\ObstacleSpawner.cs" />
+    <Compile Include="Assets\Scripts\Obstacle Scripts\ObstacleMovement.cs" />
+    <Compile Include="Assets\Scripts\Player Scripts\PlayerAnim.cs" />
+    <Compile Include="Assets\Scripts\Player Scripts\PlayerJump.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
