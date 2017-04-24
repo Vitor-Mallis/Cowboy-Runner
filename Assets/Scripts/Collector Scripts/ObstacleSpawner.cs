@@ -42,7 +42,7 @@ public class ObstacleSpawner : MonoBehaviour {
     }
 
     IEnumerator SpawnObstacles() {
-        yield return new WaitForSeconds(Random.Range(1.5f, 4.5f));
+        yield return new WaitForSeconds(Random.Range(2.0f, 4.5f));
 
         int random = Random.Range(0, spawnableObstacles.Count);
         

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ObstacleMovement : MonoBehaviour {
 
-    float speed = -1.5f;
+    float speed = -2.0f;
 
     Rigidbody2D rigidBody;
 

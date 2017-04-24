@@ -17,14 +17,6 @@ public class PlayerJump : MonoBehaviour {
         rigidBody = GetComponent<Rigidbody2D>();
     }
 
-    void Update() {
-        if (canJump == false) {
-            if (rigidBody.velocity.y == 0) {
-                canJump = true;
-            }
-        }
-    }
-
 	public void Jump() {
         if (canJump) {
             canJump = false;
@@ -41,4 +33,10 @@ public class PlayerJump : MonoBehaviour {
             rigidBody.velocity = new Vector3(forwardSpeed, jumpSpeed);
         }
     }
+
+	void OnCollisionEnter2D(Collision2D collision) {
+		if (collision.gameObject.name == "Ground" || collision.gameObject.tag == "Obstacle") {
+				canJump = true;
+		}
+	}
 }

@@ -5,6 +5,7 @@ using UnityEngine;
 public class Collector : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D collision) {
-        collision.gameObject.SetActive(false);        
+		if(collision.tag != "Player")
+        	collision.gameObject.SetActive(false);        
     }
 }

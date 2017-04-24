@@ -12,7 +12,7 @@ public class BGScaler : MonoBehaviour {
             transform.localScale = new Vector3(width, height, 0);
         }
         else {
-            transform.localScale = new Vector3(width + 3, height / 2, 0);
+            transform.localScale = new Vector3(width + 6, height / 2, 0);
         }
         
     }
